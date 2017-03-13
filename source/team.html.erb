@@ -1,0 +1,19 @@
+---
+title: Our Team
+---
+<div class="container text-center padded">
+  <ul class="list-inline text-center">
+    <% ["jimmy page", "robert plant", "john paul jones", "john bonham"].each do |member| %>
+    <li>
+      <%= image_tag "../images/members/#{member}.png", class: "img-circle" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+    <% end %>
+  </ul>
+
+  <h3 class="padded">
+    <a href="mailto:contact@airbnb.com">
+      <i class="fa fa-envelope"> contact@airbnb.com</i>
+    </a>
+  </h3>
+</div>
